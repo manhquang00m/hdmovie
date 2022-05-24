@@ -5,7 +5,7 @@ import MovieCard from './MovieCard'
 import Pagination from '../pagination/Pagination';
 import { useParams } from 'react-router-dom';
 
-export default function MovieListAll(props) {
+export default function MovieListAll() {
     const { filmType } = useParams()
     const type = filmType.slice(1, filmType.length)
     console.log(type)
@@ -17,7 +17,7 @@ export default function MovieListAll(props) {
     useEffect(() => {
         let promise = Axios({
             method: 'get',
-            url: `https://api.themoviedb.org/3/movie/${type}/?api_key=b65299b9bc36d67f043452a7dc185a25&page=${page}`
+            url: tmdbAPI.getMovieList(type, page)
         })
         promise.then((response) => {
             setData({
