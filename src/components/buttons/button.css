@@ -1,0 +1,18 @@
+.btn-search {
+    color: white;
+    background-color: rgb(246, 38, 130);
+    padding: 16px;
+    border: none;
+    border-radius: 6px;
+    transition: linear .5s;
+
+}
+
+.btn-search:hover {
+    color: white;
+    background-color: rgb(170, 5, 80);
+}
+
+.btn-search i {
+    font-size: 18px;
+}

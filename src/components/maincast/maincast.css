@@ -1,0 +1,15 @@
+.cast {
+    margin: 80px 0;
+    padding: 0 30px;
+}
+
+.cast h5 {
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+}
+
+.cast img {
+    width: 100%;
+    border-radius: 8px;
+}

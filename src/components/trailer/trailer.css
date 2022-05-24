@@ -1,0 +1,16 @@
+.trailer__title {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.trailer__title span:nth-child(1) {
+    color: rgb(246, 38, 130);
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.trailer__title span:nth-child(2) {
+    color: rgb(111, 92, 241);
+}
+

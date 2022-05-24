@@ -1,0 +1,9 @@
+.input {
+    background-color: rgb(30, 41, 59);
+    width: 75%;
+    margin-right: 12px;
+    padding: 16px;
+    color: aliceblue;
+    border: none;
+    border-radius: 4px;
+}

@@ -1,0 +1,16 @@
+.footer {
+    color: white;
+    font-size: 20px;
+}
+
+.footer a i{
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+.footer a i:hover{
+    color: rgb(249, 9, 157);
+    font-size: 20px;
+}

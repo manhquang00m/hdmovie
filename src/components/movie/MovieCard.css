@@ -1,0 +1,44 @@
+.MovieCard {
+    background-color: rgb(30, 41, 59);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.MovieCard img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.MovieCard img:hover{
+    cursor: pointer;
+}
+
+.MovieCard h4{
+    color: white;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.MovieCard span{
+    color: #ccc;
+}
+
+.MovieCard span:nth-child(2){
+    float: right;
+}
+
+.MovieCard span i{
+    margin-left: 8px;
+   color: yellow;
+}
+
+.MovieCard__btn {
+    margin: 30px 0 16px 0;
+}
+
+.MovieCard__btn a{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
