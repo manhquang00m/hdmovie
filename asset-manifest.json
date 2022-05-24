@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hdmovie/static/css/main.b9e6438b.css",
+    "main.js": "/hdmovie/static/js/main.6046ac31.js",
+    "index.html": "/hdmovie/index.html",
+    "main.b9e6438b.css.map": "/hdmovie/static/css/main.b9e6438b.css.map",
+    "main.6046ac31.js.map": "/hdmovie/static/js/main.6046ac31.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9e6438b.css",
+    "static/js/main.6046ac31.js"
+  ]
+}
