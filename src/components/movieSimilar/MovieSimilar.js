@@ -7,7 +7,7 @@ export default function MovieSimilar(props) {
 
     return (
         <div className='movieSimilar'>
-            <MovieList url={tmdbAPI.getMovieInfo(props.idFilm, 'similar')} heading='Similar' />
+            <MovieList url={tmdbAPI.getMovieInfo(props.idFilm, 'similar')} typeFilm='similar' heading='Similar' />
         </div>
     )
 }

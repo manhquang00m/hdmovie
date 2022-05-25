@@ -1,10 +1,10 @@
 import React from 'react'
 import './button.css'
-
-export default function ButtonSearch() {
+import { Link } from 'react-router-dom'
+export default function ButtonSearch(props) {
     return (
         <>
-            <button className='btn-search'><i className='bx bx-search'></i></button>
+            <Link to={`/movies:search${props.input}`} className='btn-search'><i className='bx bx-search'></i></Link>
         </>
     )
 }

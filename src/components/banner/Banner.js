@@ -39,7 +39,6 @@ export default function Banner() {
                     disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}
-
             >
                 {
                     dataBanner.map((item, index) => {

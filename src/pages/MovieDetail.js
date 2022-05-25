@@ -24,7 +24,6 @@ export default function MovieDetail() {
             setData(response.data)
         })
     }, [movieId])
-
     return (
         <>
             <div className='container-fuild'>

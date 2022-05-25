@@ -20,18 +20,35 @@ export default function MovieList(props) {
     }, [])
     return (
         <div>
-            <h1>{props.heading} <Link className='viewmore' to={`/movies:${props.typeFilm}`}>View More</Link></h1>
+            <h1 className='mb-4'>{props.heading} <Link className='viewmore' to={`/movies:${props.typeFilm}`}>View More</Link></h1>
             <div className='row' style={{ margin: 0 }}>
                 <Swiper
-                    spaceBetween={40}
-                    slidesPerView={4}
                     freeMode={true}
                     modules={[FreeMode]}
+                    breakpoints={{
+                        // when window width is >= 640px
+                        320: {
+                            width: 320,
+                            slidesPerView: 2,
+                            spaceBetween: 10
+                        },
+                        768: {
+                            width: 768,
+                            slidesPerView: 3,
+                            spaceBetween: 20
+                        },
+                        // when window width is >= 768px
+                        1024: {
+                            width: 1024,
+                            slidesPerView: 3,
+                            spaceBetween: 40
+                        },
+                    }}
                 >
                     {
                         data.map((item, index) => {
                             return (
-                                <SwiperSlide style={{ marginRight: '80px' }} className="col-lg-3" key={index}>
+                                <SwiperSlide style={{ marginRight: '80px' }} key={index}>
                                     <MovieCard idFilm={item.id} imgSrc={tmdbAPI.imageSize500(item.poster_path)} voteAverage={item.vote_average} releaseDate={item.release_date} titleFilm={item.title} />
                                 </SwiperSlide>
                             )
